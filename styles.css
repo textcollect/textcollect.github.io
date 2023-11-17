@@ -64,7 +64,7 @@ h1 {
 
 .banner img {
     width: 100%;
-    max-height: 7rem;
+    max-height: 100px;
 }
 
 #bannerText {
@@ -84,17 +84,17 @@ h1 {
     background-color: transparent;
 }
 
-#postTable a {
+/* a {
     text-decoration-line: none;
     color: black;
-}
+} */
 
 /* Select and style a link on hover */
 a:hover {
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: lightblue;
+    text-decoration-color: rgb(160, 200, 213);
     text-decoration-thickness: auto;
 }
 
