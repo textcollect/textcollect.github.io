@@ -80,7 +80,7 @@ h1 {
     grid-area: main;
 }
 
-#postTable th, #postTable td {
+.table th, .table td {
     background-color: transparent;
 }
 
