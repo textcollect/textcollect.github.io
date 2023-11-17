@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Projects</title>
+    </head>
+    <body>
+        <!-- Insert Header -->
+        <div id="header"></div>
+
+        <div class="container index-layout" style="margin-left: 1rem;">
+            <aside class="nav-sidebar">
+                <!-- Insert Navbar -->
+                <div id="navbar"></div>
+            </aside>
+
+            <main class="index-main">
+                <div class="row">
+                    <div class="col-12 col-md-auto">
+                        <h1>Projects</h1>
+                        <p>These are all the projects I have completed thus far:</p>
+                    </div>
+                    <div class="table-responsive col-12 col-auto">
+                        <table class="table" id="postTable">
+                            <thead>
+                                <tr>
+                                    <th>Project Title & Description</th>
+                                    <th>Link</th>
+                                    <th>Repository</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- js code to insert data from here -->
+                                <tr>
+                                    <td>Python 100 Days of Code (Udemy Course) (incomplete)</td>
+                                    <td>N.A.</td>
+                                    <td><a href="https://github.com/textcollect/Python-100-Days">Github</a></td>
+                                    <td>24 Oct 2023</td>
+                                </tr>
+                                <tr>
+                                    <td>MyFavBusStop(simple web app to view bus arrival timings)</td>
+                                    <td><a href="#">Application</a></td>
+                                    <td><a href="https://youtu.be/EBcmpEwNcWs">Showcase</a></td>
+                                    <td>15 Oct 2023</td>
+                                </tr>
+                                <tr>
+                                    <td>onepost(a basic social networking web application for posting and replying once a day)</td>
+                                    <td><a href="#">Site</a></td>
+                                    <td><a href="https://github.com/textcollect/1post-public">Github</a></td>
+                                    <td>26 May 2023</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+
+        
+
+        <!-- for loading footer.html -->
+        <div id="footer"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        
+        <script>
+            $(document).ready(function()
+            {
+                $("#navbar").load("common/navbar.html");
+                $("#header").load("common/header.html");
+                $("#footer").load("common/footer.html");
+            }
+            );
+        </script>
+
+    </body>
+</html>
