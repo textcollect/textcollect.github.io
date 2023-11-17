@@ -72,7 +72,7 @@
         // prompt user to enter name to display in the header
         document.addEventListener('DOMContentLoaded', function () {
             let name = prompt("Please enter your name");
-            if (name == null) {
+            if (name === null || /^\s*$/.test(name)) {
                 name = "Visitor";
             }
             console.log(name);
